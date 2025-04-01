@@ -14,13 +14,13 @@ Chindi Bazaar is an online thrift store exclusively for clothes. The platform ai
 	•	State Management: (Specify if using Redux, Context API, etc.)
 
 📌 Installation & Setup
-	1.	Clone the repository:
-      git clone https://github.com/your-username/chindi-bazaar.git
-      cd chindi-bazaar
-	2.	Install dependencies:
-      npm install 
-  3. Start the development server 
-      npm run dev 
+	1. Clone the repository:
+	`git clone https://github.com/your-username/chindi-bazaar.git`
+      	`cd chindi-bazaar`
+	2. Install dependencies:
+      	`npm install` 
+  	3. Start the development server 
+      	`npm run dev` 
 
 🎯 Future Enhancements
 	•	Backend integration for user authentication and product management.
