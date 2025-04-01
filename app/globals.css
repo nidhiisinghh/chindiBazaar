@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 351 43% 95%;
+    --foreground: 340 40% 10%;
+
+    --card: 351 43% 98%;
+    --card-foreground: 340 40% 10%;
+
+    --popover: 351 43% 97%;
+    --popover-foreground: 340 40% 10%;
+
+    --primary: 345 85% 15%;
+    --primary-foreground: 351 43% 95%;
+
+    --secondary: 351 33% 60%;
+    --secondary-foreground: 351 43% 95%;
+
+    --accent: 153 42% 12%;
+    --accent-foreground: 351 43% 95%;
+
+    --muted: 340 12% 24%;
+    --muted-foreground: 340 5% 60%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 351 43% 95%;
+
+    --border: 340 12% 86%;
+    --input: 340 12% 86%;
+    --ring: 340 40% 15%;
+
+    --radius: 0.5rem;
+
+    /* Custom theme colors from provided palette */
+    --burgundy: 344 98% 15%;
+    --brown: 0 20% 30%;
+    --mauve: 348 27% 61%;
+    --forest: 153 42% 12%;
+    --pink-bg: 351 43% 95%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-playfair;
+  }
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero-gradient {
+  background: linear-gradient(45deg, #4c0112, #5a3c3c, #bb787f);
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
