@@ -8,11 +8,13 @@ Chindi Bazaar is an online thrift store exclusively for clothes. The platform ai
 - **Social Media Integration:** Collaborates with influencers and thrift stores.  
 - **Aesthetic & User-Friendly UI:** Built with React for a seamless shopping experience.  
 
-## 🛠 Tech Stack  
-- **Frontend:** React, Tailwind CSS  
-- **Backend:** Yet to be developed  
-- **State Management:** *(Specify if using Redux, Context API, etc.)*  
-
+## 🛠 Tech Stack
+- **Frontend:** Next.js, TypeScript, Tailwind CSS, shadcn/ui components
+- **Styling:** Custom theme with Poppins and Playfair fonts
+- **Icons:** Lucide icon library
+- **Backend:** Yet to be developed
+- **State Management:** *(Specify if using Redux, Context API, etc.)*
+  
 ## 📌 Installation & Setup  
 1. **Clone the repository:**  
    ```sh
